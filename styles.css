@@ -1,0 +1,170 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow: auto;
+}
+
+.top-bar {
+    display:flex;
+    justify-content: space-between;
+    border: 1px lightgray solid;
+    border-top: none;
+    height: 4.5rem;
+}
+.top-right{
+    display: flex;
+    border-left: 1px lightgray solid;
+    width:77%;
+    justify-content: flex-end;
+    padding: 10px 5px 10px 5px;
+}
+
+.top-right-btn {
+    display: flex;
+    align-items: center;
+    color:#5E72E4;
+    font-weight: bold;
+    font-size: .9rem;
+    border: #5E72E4 solid 1px;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 4px;
+    height: 2.8rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+.top-right-btn:hover {
+    background-color: rgba(175, 205, 238, 0.7)
+}
+
+#arrow {
+    padding: .5rem;
+}
+
+.top-left {
+    display: flex;
+    justify-content: space-between;
+    width:23%
+}
+
+.top-left-btn {
+    width:1.5rem;
+    margin:10px;
+    cursor: pointer;
+}
+
+.video-section {
+    display:flex;
+    flex-direction: row;
+}
+
+.video-section-left {
+    display: block;
+    width:23%;
+    height: 43rem;
+    overflow-y: scroll ;
+}
+
+.completion {
+    margin: .5rem 1rem;
+    padding: 1rem;
+}
+
+#completion-header {
+    line-height: 25px;
+}
+
+.completion-bar {
+    background-color: #5E72E4;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 1000px;
+    margin-top: .8rem ;
+    margin-bottom: .5rem;
+}
+
+.progress {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.8rem;
+    position: sticky;
+    top: -1px;
+}
+
+.percent {
+    font-weight:bold;
+    font-size: 1.1rem;
+}
+
+.lectures{
+    border:lightgray 1px solid;
+}
+
+.lecture-headings {
+    margin-top:1.5rem;
+    padding: 1rem;
+    padding-bottom: .7rem;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.lecture {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-size:13px;
+    height: 3.5rem;
+    background-color: rgba(206, 195, 201, 0.1);
+    border-top: rgba(217, 204, 211, 0.28) 1px solid;
+    padding: .2rem;
+    cursor:pointer;
+    line-height: 22px;
+    transition: background-color 100ms;
+}
+
+.lecture:hover {
+    background-color:white;
+}
+
+#done {
+    padding-right: .5rem;
+    margin-left: .5rem;
+}
+
+#bars {
+    padding: 1rem;
+}
+
+.video-section-right {
+    width:77%;
+    height: auto;
+    border: rgba(217, 204, 211, 0.28) 1px solid;
+    border-top: none;
+}
+
+#lecture-header {
+    display: flex;
+    align-items:center;
+    padding:1rem;
+    padding-top: 1rem;
+    margin-top: .5rem;
+    margin-left: 1rem;
+}
+
+#play {
+    width: 40px;
+    height: 25px;
+}
+
+.video {
+    width: 1150px;
+    height:600px;
+    padding: .8rem .8rem 1rem 2.5rem;
+    margin-top: .5rem;
+}
