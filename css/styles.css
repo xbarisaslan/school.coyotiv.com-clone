@@ -1,10 +1,15 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
+html{
+    min-height: 100%;
+}
+
 body{
-    overflow: auto;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-bar {
@@ -66,8 +71,9 @@ body{
 .video-section-left {
     display: block;
     width:23%;
-    height: 43rem;
-    overflow-y: scroll ;
+    height:43.5rem;
+    overflow-y: scroll;
+    position: relative;
 }
 
 .completion {
@@ -119,7 +125,7 @@ body{
     align-items: center;
     font-family: Roboto;
     font-size:13px;
-    height: 3.5rem;
+    height: auto;
     background-color: rgba(206, 195, 201, 0.1);
     border-top: rgba(217, 204, 211, 0.28) 1px solid;
     padding: .2rem;
@@ -143,9 +149,10 @@ body{
 
 .video-section-right {
     width:77%;
-    height: auto;
+    height:43.5rem;
     border: rgba(217, 204, 211, 0.28) 1px solid;
     border-top: none;
+    overflow-y:scroll;
 }
 
 #lecture-header {
@@ -167,4 +174,26 @@ body{
     height:600px;
     padding: .8rem .8rem 1rem 2.5rem;
     margin-top: .5rem;
+}
+
+.video-headers {
+    padding: 1rem 1rem 1rem 2.5rem;
+    font-size: 2rem;
+}
+
+.lecture-notes-link {
+    font-size:1rem;
+}
+
+.lecture-headers-info {
+    padding-left:2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+
+.lecture-headers-info:last-child {
+    margin-bottom: 2rem;
 }
